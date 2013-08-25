@@ -129,5 +129,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 	      vb.gui = true
     end
     oraxe.vm.network :private_network, ip: "192.168.57.100"
+
+    # install chef using omnibus installer using shell
+    oraxe.vm.provision :shell, :inline => "curl -L https://www.opscode.com/chef/install.sh | bash"
   end
 end
