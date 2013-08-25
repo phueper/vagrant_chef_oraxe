@@ -132,5 +132,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # install chef using omnibus installer using shell
     oraxe.vm.provision :shell, :inline => "curl -L https://www.opscode.com/chef/install.sh | bash"
+
+    # chef-solo setup
+    oraxe.vm.provision :chef_solo do |chef|
+      # contains "users" and "ssh_known_hosts" databags
+      #chef.data_bags_path = "databags"
+      #chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
+
+      chef.add_recipe "yum"
+      chef.add_recipe "oraxe"
+    end
   end
 end
