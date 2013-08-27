@@ -125,9 +125,15 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #TODO: local copy?
     config.vm.box_url = "https://dl.dropbox.com/s/zejz4yljiexqcfu/oracle64.box"
     oraxe.vm.hostname = "oraxe.local"
-    #debug
+
     config.vm.provider "virtualbox" do |vb|
-	      vb.gui = true
+      #debug
+      vb.gui = true
+      #restrict cpu
+      vb.customize ["modifyvm", :id, "--cpuexecutioncap", "50"]
+      # change memory and add swap disk
+      #info = vb.customize ["showvminfo", :id]
+      #vb.customize ["modifyhd", :id]
     end
     oraxe.vm.network :private_network, ip: "192.168.57.100"
 
