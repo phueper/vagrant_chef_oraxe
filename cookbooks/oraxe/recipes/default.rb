@@ -16,7 +16,7 @@ package "oracle-rdbms-server-11gR2-preinstall" do
 end
 
 rpm_package "oracle-xe" do
-  source "/vagrant/oraxe_install/Disk1/oracle-xe-*.rpm"
+  source "/vagrant/oraxe_install/oracle-xe-11.2.0-1.0.x86_64.rpm"
   action :install
 end
 
@@ -41,7 +41,7 @@ file "test_delete" do
 end
 
 rpm_package "sqldeveloper" do
-  source "/vagrant/oraxe_install/sqldeveloper-*.rpm"
+  source "/vagrant/oraxe_install/sqldeveloper-3.2.20.09.87-1.noarch.rpm"
   action :install
 end
 
