@@ -142,11 +142,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # chef-solo setup
     oraxe.vm.provision :chef_solo do |chef|
+      chef.log_level = "debug"
       # contains "users" and "ssh_known_hosts" databags
       #chef.data_bags_path = "databags"
       #chef.cookbooks_path = ["cookbooks", "site-cookbooks"]
 
-      chef.add_recipe "yum"
+      #chef.add_recipe "yum"
       chef.add_recipe "oraxe"
     end
   end
