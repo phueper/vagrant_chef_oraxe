@@ -121,7 +121,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #phueper settings
   # oraxe machine
   config.vm.define :oraxe do |oraxe|
-    oraxe.vm.box = "oracle64"
+    oraxe.vm.box = "myoracle64"
     #TODO: local copy?
     config.vm.box_url = "https://dl.dropbox.com/s/zejz4yljiexqcfu/oracle64.box"
     oraxe.vm.hostname = "oraxe.local"
