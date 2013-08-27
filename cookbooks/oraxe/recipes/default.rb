@@ -1,3 +1,6 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+# vi: set shiftwidth=2 tabstop=2 expandtab :
 #
 # Cookbook Name:: oraxe
 # Recipe:: default
