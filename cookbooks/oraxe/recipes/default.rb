@@ -40,8 +40,12 @@ file "test_delete" do
   action :delete
 end
 
+execute "jdk6_install" do
+  command "sh /vagrant/oraxe_install/jdk-6u45-linux-x64-rpm.bin"
+  action :run
+end
+
 rpm_package "sqldeveloper" do
   source "/vagrant/oraxe_install/sqldeveloper-3.2.20.09.87-1.noarch.rpm"
   action :install
 end
-
