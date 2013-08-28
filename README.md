@@ -29,3 +29,10 @@ The chef 'oraxe' recipe will install rpm packages for oracle-xe and sqldeveloper
 which must be downloaded from the Oracle website (TODO: urls) and put into oraxe_install
 directory... 
 
+TODO:
+
+- install Java (needed for SQL Developer)
+- install minimal X and/or Xvnc for local usage of sqldeveloper?
+	- alternative: use X Forwarding via ssh? 
+- squirrel?
+- ...
