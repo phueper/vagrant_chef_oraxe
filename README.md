@@ -34,5 +34,6 @@ TODO:
 - install Java (needed for SQL Developer)
 - install minimal X and/or Xvnc for local usage of sqldeveloper?
 	- alternative: use X Forwarding via ssh? 
+  gnome, gdm, fonts (yum groupinstall 'Fonts') testen welche...
 - squirrel?
 - ...
