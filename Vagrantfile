@@ -149,6 +149,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
       #chef.add_recipe "yum"
       chef.add_recipe "oraxe"
+      chef.add_recipe "gnome_gdm"
     end
   end
 end
