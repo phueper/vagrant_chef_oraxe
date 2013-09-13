@@ -6,11 +6,7 @@ Oracle XE Virtual Machine creation using vagrant and chef-solo
 To create the VM Box using veewee:
 ----------------------------------
 
-I created a Oracle 6.4 Template for veewee in
-
-https://github.com/phueper/veewee
-
-Pull Request https://github.com/jedi4ever/veewee/pull/785 to merge into main veewee repository:
+Create a Oracle 6.4 VM using veewee
 
 https://github.com/jedi4ever/veewee
 
